@@ -1,0 +1,46 @@
+.translate-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+}
+
+.actions {
+  width: 45%;
+}
+
+.select-action {
+  width: 20%;
+}
+
+.history-area {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.history-text-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.history-text {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .translate-area {
+    flex-direction: column;
+  }
+}
