@@ -1,4 +1,4 @@
-A small translation application created with TypeScript and React.js
+A small translation application bsaed on TypeScript and React.js. You can look at the project [here](https://translate-app-henna.vercel.app/)
 
 # Technologies
 
