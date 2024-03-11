@@ -2,6 +2,7 @@ import styles from "./Translate.module.css";
 import { translateText } from "../../redux/apiCall";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 import { useEffect, useState } from "react";
+import { ImCross } from "react-icons/im";
 
 const Translate = () => {
   const translateHistory = useAppSelector((state) => state.translate.history);
@@ -64,6 +65,12 @@ const Translate = () => {
               onChange={(e) => setEnteredText(e.target.value)}
               className="bg-teal-500 resize-none block p-2.5 w-full text-sm rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-white"
             ></textarea>
+            {enteredText.length > 0 ? (
+              <ImCross
+                className={styles["delete-action"]}
+                onClick={() => setEnteredText("")}
+              />
+            ) : null}
           </div>
         </div>
 
