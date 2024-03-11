@@ -4,8 +4,8 @@ A small translation application based on TypeScript and React.js. You can look a
 
 - [React.js](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/)
 - [Tailwind](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
 
 # Install
 
